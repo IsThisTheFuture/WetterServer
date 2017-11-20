@@ -56,6 +56,7 @@ public class WetterServer {
             logger.info("Server shutting down...");
             threadPool.shutdown();
             socket.close();
+
             logger.info("Server shutdown complete");
         }
     }

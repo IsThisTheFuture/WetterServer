@@ -1,6 +1,9 @@
 import java.net.DatagramPacket;
+import java.sql.Connection;
 
 public class DataProcessor implements Runnable {
+    private  DatabaseAccess dbAccess = new DatabaseAccess();
+    private Connection connection = dbAccess.getConnection();
     private DatagramPacket packet = null;
 
     public DataProcessor(DatagramPacket packet){
