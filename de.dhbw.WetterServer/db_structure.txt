@@ -1,0 +1,13 @@
+MariaDB [wetterdaten]> SHOW columns FROM wetterdaten.messungen;
+
++----------------+--------------+------+-----+---------+----------------+
+| Field          | Type         | Null | Key | Default | Extra          |
++----------------+--------------+------+-----+---------+----------------+
+| messung_id     | int(11)      | NO   | PRI | NULL    | auto_increment |
+| station        | varchar(100) | NO   |     | NULL    |                |
+| unix_timestamp | int(11)      | NO   |     | NULL    |                |
+| property       | varchar(100) | NO   |     | NULL    |                |
+| property_unit  | varchar(100) | NO   |     | NULL    |                |
+| value          | double       | YES  |     | NULL    |                |
++----------------+--------------+------+-----+---------+----------------+
+
